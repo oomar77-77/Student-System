@@ -1,0 +1,50 @@
+:root{
+    --main-color:#C3A46B;
+}
+body{
+    background: linear-gradient(to right,#243b55,#141e30);
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer
+title{
+     font-family: "Dancing Script", cursive;
+}
+#Register .container .body form{
+    width: 550px;
+    margin: auto;
+    background: linear-gradient(to right,#eaeaea,#dbdbdb,#f2f2f2,#ada996);
+    border-radius: 20px;
+}
+i,
+#Register .container .body form h3{
+    color: var(--main-color);
+}
+form {
+    position: relative;
+}
+form .fa-rotate-left{
+    top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+form .fa-rotate-left.show{
+    display: block;
+}
+#Search{
+    width: 300px;
+    margin: auto
+    
+}
+#Search div{
+    text-align: center;
+}
+#Data table.table{
+    min-width: max-content;
+}

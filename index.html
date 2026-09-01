@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="restaurant">
+        <meta name="author" content="Omar">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <title>Students System</title>
+    </head>
+    <body>
+        <section id="Register">
+            <div class="container">
+                <div class="head mb-5 text-center">
+                    <img src="./images/logo-be01d065.png" alt="logo">
+                </div>
+                <div class="body">
+                    <form class=" p-4" data-type="add">
+
+                        <i
+                            class="fa-solid fa-rotate-left position-absolute "
+                            onclick="cancelEdit()"></i>
+                        <h3 class=" mb-3 text-center">Students System</h3>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i
+                                    class="fa-solid fa-user"></i></span>
+                            <input type="text" class="form-control"
+                                name="firstName"
+                                placeholder="First Name *"
+                                onblur="checkInput(this)" data-valid="false"
+                                autocomplete="off">
+                        </div>
+                        <p class="alert d-none alert-danger"
+                            data-error-name="firstName" role="alert">
+                        </p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i
+                                    class="fa-solid fa-user"></i></span>
+                            <input type="text" class="form-control"
+                                name="lastName"
+                                placeholder="Last Name *"
+                                onblur="checkInput(this)" data-valid="false"
+                                autocomplete="off">
+                        </div>
+                        <p class="alert d-none alert-danger"
+                            data-error-name="lastName" role="alert">
+                        </p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i
+                                    class="fa-solid fa-envelope"></i></span>
+                            <input type="text" class="form-control" name="Email"
+                                placeholder="Email *" onblur="checkInput(this)"
+                                data-valid="false" autocomplete="off">
+                        </div>
+                        <p class="alert d-none alert-danger" role="alert"
+                            data-error-name="Email"></p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i
+                                    class="fa-solid fa-hashtag"></i></span>
+                            <input type="text" class="form-control" name="age"
+                                placeholder="Age *" onblur="checkInput(this)"
+                                data-valid="false" autocomplete="off">
+                        </div>
+                        <p class="alert d-none alert-danger" role="alert"
+                            data-error-name="age"></p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i
+                                    class="fa-solid fa-mobile-button"></i></span>
+                            <input type="text" class="form-control" name="phone"
+                                placeholder="phone *" onblur="checkInput(this)"
+                                data-valid="false" autocomplete="off">
+                        </div>
+                        <p class="alert d-none alert-danger"
+                            data-error-name="phone" role="alert">
+
+                        </p>
+                        <button
+                            class="btn btn-success text-center w-100">Add</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="Search" class="my-5">
+            <div class="container">
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i
+                            class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control"
+                        name="search"
+                        placeholder="Search" id="searchInput">
+                </div>
+            </div>
+        </section>
+        <section id="Data" class="w-75 mx-auto mb-5">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                            <th>phone</th>
+                            <th>option</th>
+                        </tr>
+                    </thead>
+                    <tbody class="body">
+                        <td id="tableAlert" class="table-warning text-center"
+                            colspan="7">There Are No Data</td>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <script src="./js/bootstrap.js"></script>
+        <script src="./js/functions.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
